@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kafuu Chino</title>
+    <link
+      rel="shortcut icon"
+      href="img/kaffuchino-crop.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Kafuu <span>Chino</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-btn"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
+        <a id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- search form start -->
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="search here...">
+          <label for="search-box"><i data-feather="search" id="search-icon"></i></label>
+        </div>
+      <!-- search form end -->
+
+      <!-- shopping cart start -->
+        <div class="shopping-cart">
+          <div class="cart-item">
+            <img src="img/Products/Chino-Kafuu.jpg" alt="Chino Kafuu">
+            <div class="item-detail">
+              <h3>Chino Kafuu</h3>
+              <div class="item-price">IDR 7K</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+          <div class="cart-item">
+            <img src="img/Products/Chiya-Ujimatsu.jpg" alt="Chiya Ujimatsu">
+            <div class="item-detail">
+              <h3>Chiya Ujimatsu</h3>
+              <div class="item-price">IDR 12K</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+          <div class="cart-item">
+            <img src="img/Products/Midori-Aoyama.jpg" alt="Midori Aoyama">
+            <div class="item-detail">
+              <h3>Midori Aoyama</h3>
+              <div class="item-price">IDR 20K</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+        </div>
+      <!-- shopping cart end -->
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <video id="bg-video" muted autoplay loop>
+          <source src="img/hero-vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1>Mari Nikmati Secangkir <span>Kaffu Chino</span></h1>
+        <p>Gochuumon wa Usagi desu ka?</p>
+        <a href="#menu" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/kaffuchino.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>
+            Karena anda akan dilayani oleh sajian kopi dari para loli kami 😋
+          </p>
+          <p>Harga yang murah serta gratis 1 loli untuk dibawa pulang ☕</p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- menu section start -->
+    <section class="menu" id="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Macam-macam <span style="text-decoration: line-through">loli</span> kopi
+        sudah menunggu untuk dipesan!
+      </p>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/Menu/Cocoa-Hoto.jpg"
+            alt="Cocoa Hoto"
+            class="menu-card-img"
+            width="300"
+          />
+          <h3 class="menu-card-title">- Cocoa Hoto -</h3>
+          <p class="menu-card-price">IDR 7K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Chino-Kafuu.jpg"
+            alt="Chino Kafu"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Chino Kafuu -</h3>
+          <p class="menu-card-price">IDR 10K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Rize-Tedeza.jpg"
+            alt="Rize Tedeza"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Rize Tedeza -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Chiya-Ujimatsu.jpg"
+            alt="Chiya Ujimatsu"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Chiya Ujimatsu -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Sharo-Kirima.jpg"
+            alt="Sharo Kirima"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Sharo Kirima -</h3>
+          <p class="menu-card-price">IDR 17K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Maya-Joga.jpg" alt="Maya Joga" class="menu-card-img" />
+          <h3 class="menu-card-title">- Maya Joga -</h3>
+          <p class="menu-card-price">IDR 5K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Megumi-Natsu.jpg"
+            alt="Megumi Natsu"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Megumi Natsu -</h3>
+          <p class="menu-card-price">IDR 20K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/Menu/Midori-Aoyama.jpg"
+            alt="Midori Aoyama"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Midori Aoyama -</h3>
+          <p class="menu-card-price">IDR 80K</p>
+        </div>
+      </div>
+    </section>
+    <!-- menu section end -->
+
+    <!-- product section start -->
+      <section class="products" id="products">
+        <h2> <span>Produk Unggulan</span> Kami</h2>
+        <p>Beli sekarang! Diskon besar lho!</p>
+        <div class="row">
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button-chino-kafuu"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/Products/Chino-Kafuu.jpg" alt="Chino Kafuu">
+            </div>
+            <div class="product-content">
+              <h3>Chino Kafuu</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 7K <span>IDR 10K</span></div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button-chiya-ujimatsu"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/Products/Chiya-Ujimatsu.jpg" alt="Chiya Ujimatsu">
+            </div>
+            <div class="product-content">
+              <h3>Chiya Ujimatsu</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button-cocoa-hoto"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/Products/Cocoa-Hoto.jpg" alt="Cocoa Hoto">
+            </div>
+            <div class="product-content">
+              <h3>Cocoa Hoto</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 5K <span>IDR 7K</span></div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
+              <a href="#" class="item-detail-button-midori-aoyama"><i data-feather="eye"></i></a>
+            </div>
+            <div class="product-image">
+              <img src="img/Products/Midori-Aoyama.jpg" alt="Midori Aoyama">
+            </div>
+            <div class="product-content">
+              <h3>Midori Aoyama</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 20K <span>IDR 80K</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- product section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>Kontak Kami untuk info lebih lanjut!</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5766255.437364345!2d112.17958514794304!3d-3.6341642216269707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6c9a9138990fd%3A0x593aee2ae36416b6!2sTitik%20Nol%20IKN%20Nusantara!5e0!3m2!1sid!2sid!4v1695561803572!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="number" placeholder="no hp" inputmode="numeric" />
+          </div>
+          <button class="btn" type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://www.instagram.com/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/"><i data-feather="twitter"></i></a>
+        <a href="https://facebook.com/"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>
+          Created by
+          <a href="https://github.com/KevinMaulanaAtmaja" target="_blank"
+            >Amelia</a
+          >. | &copy; 2023
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- modal box item detail start -->
+      <div class="modal" id="item-detail-modal-chino-kafuu">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/Products/Chino-Kafuu.jpg">
+            <div class="product-content">
+              <h3>Chino Kafuu</h3>
+              <p>Chino memiliki rambut panjang berwarna periwinkle dengan poni horizontal yang diikat dengan klip melintang hitam di setiap sisi kepalanya. Dia memiliki mata biru yang menenangkan.</p>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 7K <span>IDR 10K</span></div>
+              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="item-detail-modal-chiya-ujimatsu">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/Products/Chiya-Ujimatsu.jpg">
+            <div class="product-content">
+              <h3>Chiya Ujimatsu</h3>
+              <p>Chiya memiliki rambut panjang berwarna coklat tua yang diluruskan dan samar-samar. Pada bagian samping kepalanya terdapat hiasan bunga dengan pita. Dia memiliki kulit putih dan mata hijau melengkung ke bawah.</p>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 12K <span>IDR 15K</span></div>
+              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="item-detail-modal-cocoa-hoto">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/Products/Cocoa-Hoto.jpg">
+            <div class="product-content">
+              <h3>Cocoa Hoto</h3>
+              <p>Cocoa memiliki rambut pirang stroberi sebahu dengan poni longgar, dihiasi jepit rambut bunga sakura di sisi kepalanya. Dia memiliki mata ungu Tareme.</p>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 5K <span>IDR 7K</span></div>
+              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="item-detail-modal-midori-aoyama">
+        <div class="modal-container">
+          <a href="#" class="close-icon"><i data-feather="x"></i></a>
+          <div class="modal-content">
+            <img src="img/Products/Midori-Aoyama.jpg">
+            <div class="product-content">
+              <h3>Midori Aoyama</h3>
+              <p>Aoyama adalah seorang wanita dewasa yang terlihat seperti remaja. Dia memiliki rambut pirang berpasir keriting panjang sedang dan mata berwarna biru langit kusam.</p>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">IDR 20K <span>IDR 80K</span></div>
+              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal box item detail end -->
+
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
