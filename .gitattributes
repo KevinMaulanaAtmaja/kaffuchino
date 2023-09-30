@@ -1,0 +1,2 @@
+# Tidak mengubah pemformatan garis baru (newline) pada file SVG
+*.svg -text
