@@ -196,9 +196,9 @@ body{
 
 .hero .mask-container {
     position: absolute;
-    background: salmon;
+    /* background: salmon; */
     inset: 0;
-    /* -webkit-mask-image: url('img/header-bg.svg'); */
+    -webkit-mask-image: url('img/kaffuchino-walpaper-removebg-preview.png');
     -webkit-mask-size: cover;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
