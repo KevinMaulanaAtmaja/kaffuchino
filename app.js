@@ -1,7 +1,7 @@
 document.addEventListener('alpine:init', () => {
     Alpine.data('products', () => ({
         items: [
-            {id: 1, name: 'Chino Kafuu', img: 'Chino-kafuu.jpg', price: 7000, originPrice: 10000, detail: 'chino-kafuu'},
+            {id: 1, name: 'Chino Kafuu', img: 'Chino-Kafuu.jpg', price: 7000, originPrice: 10000, detail: 'chino-kafuu'},
             {id: 2, name: 'Chiya Ujimatsu', img: 'Chiya-Ujimatsu.jpg', price: 12000, originPrice: 15000, detail: 'chiya-ujimatsu'},
             {id: 3, name: 'Cocoa Hoto', img: 'Cocoa-Hoto.jpg', price: 5000, originPrice: 7000, detail: 'cocoa-hoto'},
             {id: 4, name: 'Midori Aoyama', img: 'Midori-Aoyama.jpg', price: 20000, originPrice: 70000, detail: 'midori-aoyama'},
