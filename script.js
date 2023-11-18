@@ -27,57 +27,8 @@ const shoppingCart = document.querySelector(".shopping-cart");
 shoppingCartBtn.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         shoppingCart.classList.toggle('active');
-            e.preventDefault();
+        e.preventDefault();
     });
-});
-
-
-
-// modal box
-// var modal box
-const itemDetailBtn1 = document.querySelector(
-".item-detail-button-chino-kafuu"
-);
-const itemDetailBtn2 = document.querySelector(
-".item-detail-button-chiya-ujimatsu"
-);
-const itemDetailBtn3 = document.querySelector(
-".item-detail-button-cocoa-hoto"
-);
-const itemDetailBtn4 = document.querySelector(
-".item-detail-button-midori-aoyama"
-);
-
-// var detail modal
-const detailModal1 = document.querySelector("#item-detail-modal-chino-kafuu");
-const detailModal2 = document.querySelector("#item-detail-modal-chiya-ujimatsu");
-const detailModal3 = document.querySelector("#item-detail-modal-cocoa-hoto");
-const detailModal4 = document.querySelector("#item-detail-modal-midori-aoyama");
-
-// looping
-// itemDetailBtn.forEach((btn) => {
-//     btn.addEventListener('click', (e) => {
-//         detailModal.style.display = 'flex';
-//         e.preventDefault();
-//     })
-// })
-
-// ketika icon mata diklik
-itemDetailBtn1.addEventListener('click', (e) => {
-    detailModal1.style.display = "flex";
-    e.preventDefault();
-});
-itemDetailBtn2.addEventListener('click', (e) => {
-    detailModal2.style.display = "flex";
-    e.preventDefault();
-});
-itemDetailBtn3.addEventListener('click', (e) => {
-    detailModal3.style.display = "flex";
-    e.preventDefault();
-});
-itemDetailBtn4.addEventListener('click', (e) => {
-    detailModal4.style.display = "flex";
-    e.preventDefault();
 });
 
 
@@ -85,8 +36,14 @@ itemDetailBtn4.addEventListener('click', (e) => {
 const closeIcon = document.querySelectorAll(".close-icon");
 
 // klik tombol close diklik
-    closeIcon.forEach((close) => {
-        close.addEventListener('click', (e) => {
+
+const detailModal1 = document.getElementById("detail-modal-chino-kafuu");
+const detailModal2 = document.getElementById("detail-modal-chiya-ujimatsu");
+const detailModal3 = document.getElementById("detail-modal-cocoa-hoto");
+const detailModal4 = document.getElementById("detail-modal-midori-aoyama");
+
+closeIcon.forEach((close) => {
+    close.addEventListener('click', (e) => {
         detailModal1.style.display = 'none';
         detailModal2.style.display = 'none';
         detailModal3.style.display = 'none';
@@ -120,29 +77,22 @@ addToCart.forEach((btn) => {
     });
 });
 
-// ketika remove icon diklik
-const removeItem = document.querySelectorAll(".remove-item");
-removeItem.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        alert('Fitur hapus belum bisa wlee😜');
-    });
-});
-
 
 // ketika search icon diklik
-const searchIcon = document.querySelector("#search-icon");
-searchIcon.addEventListener('click', () => {
-    alert('Fitur dalam penggerjaan! sabar ygy😁');
-});
+function searchIconAlert() {
+    alert("Fitur dalam penggerjaan! sabar ygy😁");
+}
 
 
-// ketika btn kirim pesan di submmit 
-const submitPesan = document.querySelector('.btn');
+// ketika btn kirim pesan di submit 
+function submitAlert() {
+    alert("Jangan di spam ya!💀");
+}
 
-submitPesan.addEventListener('click', (e) => {
-    alert('Jangan di spam ya!💀')
-})
-
+// ketika btn checkout di submit 
+function checkoutAlert() {
+    alert("Fitur payment gateway, coming soon!💳");
+}
 
 
 
@@ -168,7 +118,7 @@ document.addEventListener('click', (e) => {
     if (isOutsideShoppingCartBtns) {
         shoppingCart.classList.remove("active");
     }
-    
+
     // if (!shoppingCartBtn.contains(e.target) && !shoppingCart.contains(e.target)){
     //     shoppingCart.classList.remove("active");
     // }

@@ -1,0 +1,20 @@
+SARAN PERBAIKAN :
+
+Ganti harga pada menu kami section ->
+secara manual atau pake function js? 
+Contoh : Rp 12.000 => selesai ✅
+
+Perbaiki fungsi icon keranjang dan detail pada produk unggulan kami
+terutana icon detail (eye) => selesai ✅
+
+Perbaiki saat memencet seperti search, shopping cart, hamburger nav ->
+jika memencet selain itu maka akan close sendiri juga => selesai ✅
+
+
+x-key atau x-keys? => selesai ✅
+
+submit pesan & searchIcon diklik tdk muncul alert? => selesai ✅
+
+Modal btn ->
+harga, closeBtn? => selesai ✅
+Add to cart, bintang/ review? => blum
