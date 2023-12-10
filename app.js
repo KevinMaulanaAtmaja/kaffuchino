@@ -121,10 +121,11 @@ checkoutBtn.addEventListener("click", (e) => {
 
     if (submitCount < submitLimit) {
         submitCount++;
+        let sisaSubmit = submitLimit - submitCount;
         localStorage.setItem("submitCount", submitCount);
 
+        alert(`Sisa submit yang tersisa: ${sisaSubmit}`);
         console.log(`Submit count: ${submitCount}`);
-
     } else {
         alert(
             "Anda telah mencapai batas pengiriman formulir. Dan tombol checkout tidak akan berfungsi lagi!");

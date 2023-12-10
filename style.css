@@ -197,6 +197,10 @@ body{
     text-align: center;
 }
 
+.tutor span{
+    font-weight: bold;
+}
+
 /* checkout form */
 .form-container {
     width: 100%;

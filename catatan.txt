@@ -15,6 +15,15 @@ x-key atau x-keys? => selesai ✅
 
 submit pesan & searchIcon diklik tdk muncul alert? => selesai ✅
 
-Modal btn ->
-harga, closeBtn? => selesai ✅
-Add to cart, bintang/ review? => blum
+Modal btn, harga, closeBtn, Add to cart(hapus add to cart)? => selesai ✅
+bintang/ review? => blum
+
+->10/12/2023
+validasi form jika ada yg tdk diisi => selesai ✅
+tambah payment gateway(midtrans) => selesai ✅
+
+hosting php script ke 000webhost, tutor testing payment(card credit) => selesai ✅
+
+fitur payment dibatasi (hanya 3 kali) & hitung sisa submit? => selesai ✅
+
+build script => blum
