@@ -128,7 +128,7 @@ checkoutBtn.addEventListener("click", (e) => {
     } else {
         alert(
             "Anda telah mencapai batas pengiriman formulir. Dan tombol checkout tidak akan berfungsi lagi!");
-            e.stopImmediatePropagation();
+        e.stopImmediatePropagation();
     }
 });
 
@@ -163,10 +163,12 @@ checkoutBtn.addEventListener('click', async (e) => {
     // snap metode
     // minta transaction token mrnggunakan ajax / fetch
     try {
-        const response = await fetch('../php/placeholder.php', {
-            method: 'POST',
-            body: data
-        });
+        const response = await fetch(
+            "https://nivek-web.000webhostapp.com/kedaikopi_hosting/index.php", {
+                method: "POST",
+                body: data,
+            }
+        );
         const token = await response.text();
         console.log(token);
         window.snap.pay(token, {
