@@ -163,12 +163,12 @@ checkoutBtn.addEventListener('click', async (e) => {
     // snap metode
     // minta transaction token mrnggunakan ajax / fetch
     try {
-        const response = await fetch('php/placeholder.php', {
+        const response = await fetch('../php/placeholder.php', {
             method: 'POST',
             body: data
         });
         const token = await response.text();
-        // console.log(token);
+        console.log(token);
         window.snap.pay(token, {
             onSuccess: function (result) {
                 alert("pembayaran berhasil!✅");
