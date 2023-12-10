@@ -7,6 +7,7 @@
       href="img/kaffuchino-crop.png"
       type="image/x-icon"
     />
+  <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Fonts -->
@@ -23,8 +24,12 @@
     <!-- Alpine JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <!-- App -->
-    <script src="app.js"></script>
+    <!-- Midtrans -->
+    <!-- @TODO: replace SET_YOUR_CLIENT_KEY_HERE with your client key -->
+    <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-48Zucb-9-trqiwBH"></script>
+    <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
 
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
@@ -79,7 +84,9 @@
           <h4 x-show="$store.cart.items.length" class="total">Total : <span x-text="rupiah($store.cart.total)"></span></h4>
         
           <div class="form-container" x-show="$store.cart.items.length">
-            <form action="" id="checkout-form">
+            <form action="" method="post" id="checkout-form">
+              <input type="hidden" name="items" x-model="JSON.stringify($store.cart.items)">
+              <input type="hidden" name="total" x-model="$store.cart.total">
               <h5>Customer Detail</h5>
 
               <label for="name">
@@ -97,7 +104,7 @@
                 <input type="number" name="phone" id="phone" autocomplete="off">
               </label>
 
-              <button type="submit" onclick="checkoutAlert()" class="checkout-btn" id="checkout-btn" value="checkout">Checkout</button>
+              <button type="submit" class="checkout-btn disabled" id="checkout-btn" value="checkout">Checkout</button>
             </form>
           </div>
         
@@ -397,7 +404,7 @@
               </div>
               <div class="product-price" x-text="rupiah(7000)"></div> 
               <span class="harga-coret" x-text="rupiah(10000)"></span>
-              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+              <!-- <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button> -->
             </div>
           </div>
         </div>
@@ -419,7 +426,7 @@
               </div>
               <div class="product-price" x-text="rupiah(12000)"></div> 
               <span class="harga-coret" x-text="rupiah(15000)"></span>
-              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+              <!-- <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button> -->
             </div>
           </div>
         </div>
@@ -441,7 +448,7 @@
               </div>
               <div class="product-price" x-text="rupiah(5000)"></div> 
               <span class="harga-coret" x-text="rupiah(7000)"></span>
-              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+              <!-- <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button> -->
             </div>
           </div>
         </div>
@@ -463,7 +470,7 @@
               </div>
               <div class="product-price" x-text="rupiah(20000)"> </div>
               <span class="harga-coret" x-text="rupiah(80000)"></span>
-              <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button>
+              <!-- <button type="button" id="add-to-cart"><i data-feather="shopping-cart"></i> <span>Add to Cart</span></button> -->
             </div>
           </div>
         </div>
@@ -475,5 +482,8 @@
     </script>
     <!-- My Javascript -->
     <script src="script.js"></script>
+
+        <!-- App -->
+    <script src="app.js" ></script>
   </body>
 </html>

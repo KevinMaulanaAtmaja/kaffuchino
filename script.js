@@ -90,9 +90,9 @@ function submitAlert() {
 }
 
 // ketika btn checkout di submit 
-function checkoutAlert() {
-    alert("Fitur payment gateway, coming soon!💳");
-}
+// function checkoutAlert() {
+//     alert("Fitur payment gateway, coming soon!💳");
+// }
 
 
 
